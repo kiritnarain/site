@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kirit Narain
-email: your-email@example.com
-description: Personal site of Kirit Narain, a freelance full stack software developer and Computer Science student at University of Washington, Seattle.
+email: mail@kiritnarain.com
+description: Personal site of Kirit Narain |  Full Stack Software Developer and Computer Science student at University of Washington, Seattle.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kiritnarain
@@ -30,6 +30,12 @@ github_username:  kiritnarain
 theme: kiritnarain2020
 plugins:
   - jekyll-feed
+collections:
+    projects:
+    categories:
+        output: true
+        permalink: /:path/
+
 
 
 # Exclude from processing.
