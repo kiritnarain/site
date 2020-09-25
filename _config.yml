@@ -32,6 +32,20 @@ plugins:
   - jekyll-feed
 collections:
     projects:
+        order:
+            - arglass.md
+            - genpact.md
+            - arbreakout.md
+            - safetyfirst.md
+            - dish5.md
+            - vrheadset.md
+            - albiontrades.md
+            - hitthenumber.md
+            - superbike.md
+            - reap.md
+            - sustent.md
+            - firefall.md
+            - ifb.md
     categories:
         output: true
         permalink: /:path/

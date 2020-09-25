@@ -1,7 +1,7 @@
 ---
 title: 6DOF Virtual Reality Headset
 start_duration: 04/2019
-end_duration: 06/2020
+end_duration: 06/2019
 categories: AR/VR
 featured: true
 image: /assets/img/viewmaster-stereo.jpg
