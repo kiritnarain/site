@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "GuitDetector - Computer Vision Guitar 2D Pose Tracking"
-permalink: /guitdetector
 ---
 # GuitDetector - Computer Vision Guitar 2D Pose Tracking
 This project was completed by Kirit Narain in the span of approximately two weeks. The code for the IPython notebook can be found here: <a href="https://github.com/kiritnarain/GuitDetector">https://github.com/kiritnarain/GuitDetector</a>
@@ -43,9 +42,9 @@ This resulted in a final training loss of  0.2163
 
 I chose not to use standard object detection metrics (like IOU or mAP) for this project because only the bounding box center was needed for 2D pose estimation (and the annotation process was not very accurate in terms of area as the objects are circular). Instead for each image, the predicted center of each inlay was compared with the true inlay center with a 5px threshold. This resulted in the following accuracy measurements:
 
-Train Accuracy: 97.16%
+Train Accuracy: 96.90%
 
-Test Accuracy: 97.94%
+Test Accuracy: 96.91%
 
 #### 2D Pose and Homography
 A key challenge of this project was estimating the 2D pose of the guitar from the predicted 6 inlay positions. Since the real-world distance between inlays was known, I positioned them on a static reference frame, and then implemented an algorithm similar to [RANSAC](https://en.wikipedia.org/wiki/Random_sample_consensus) to try to randomly match the predicted boxes with the positions in the static frame. For each match, the homography transformation was computed and the number of inliers calculated, and the homography with the maximum inliers (or inliers >= threshold) selected.

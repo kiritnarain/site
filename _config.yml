@@ -49,6 +49,9 @@ collections:
     categories:
         output: true
         permalink: /:path/
+    posts:
+        output: true
+        permalink: /:slug/
 
 
 
